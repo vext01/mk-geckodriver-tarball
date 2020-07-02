@@ -43,7 +43,8 @@ def populate_dest_dir(tmpd, version):
         dep_dest_dir = os.path.join(geckodriver_dest_dir, dep)
         os.makedirs(os.path.dirname(dep), exist_ok=True)  # Scaffold dirs.
         shutil.copytree(dep, dep_dest_dir)
-        return os.path.basename(dest_dir)
+
+    return os.path.basename(dest_dir)
 
 
 def get_dep_paths():
