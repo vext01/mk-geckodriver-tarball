@@ -6,11 +6,13 @@ Geckodriver depends upon several crates local to the mozilla-unified source
 tree. This script bundles up the Geckodriver source code and the local
 dependencies into a standalone tarball for easy distribution.
 
-Usage:
+You will need a clone of the "Mozilla unified" repo, which is at:
+https://hg.mozilla.org/mozilla-unified
+
+From within `testing/geckodriver`, run:
     dist.py <version>
 
 For example `dist.py 1.2.3` will create `target/dist/geckodriver-1.2.3.tar.gz`.
-
 """
 
 import toml
